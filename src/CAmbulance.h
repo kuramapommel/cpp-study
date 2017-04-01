@@ -5,8 +5,9 @@
 #ifndef STUDY_AMBULANCE_H
 #define STUDY_AMBULANCE_H
 
-#include "car.h"
+#include "CCar.h"
 
+// inheritance
 class CAmbulance : public CCar {
 public:
 	CAmbulance();

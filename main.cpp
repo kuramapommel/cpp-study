@@ -1,7 +1,8 @@
 #include <iostream>
 #include "src/CSample.h"
-#include "src/car.h"
+#include "src/CCar.h"
 #include "src/CAmbulance.h"
+#include "src/CLambdaExcutor.h"
 
 using namespace std;
 
@@ -41,6 +42,13 @@ int main() {
 	ambulance.supply(sample.getNum());
 	ambulance.move();
 	ambulance.showNumber();
+
+	CLambdaExcutor *executor = 0;
+	executor = new CLambdaExcutor();
+
+	executor -> excute(num);
+
+	delete executor;
 
 	return 0;
 }
